@@ -7,9 +7,15 @@ Food-itivity is a food journal meant to help determine ingredients you may be se
 
 After you register for an account and log in, you are greeted with an empty table. 
 
+<img src="screenshots/login.png" alt="Login" width=400px> <img src="screenshots/home.png" alt="Home" width=400px>
+
 To start out, you can click the "Eat" button in the navigation bar at the top of the screen. The program asks "What food did you eat?" and you can type in an ingredient, and an optional date for when you ate that ingredient. When you press the "Eat" button, the program records that you ate that food at that time in a sqlite database. 
 
+<img src="screenshots/eat.png" alt="Eat" width=400px> <img src="screenshots/post_eat.png" alt="Post Eat" width=400px> 
+
 You can record how you feel (from 1 to 10, 10 being the best, and 1 being the worst) over time by going to the "Record" page. You can choose a date and time for when your recording should be. The default is the present time. 
+
+<img src="screenshots/record.png" alt="Record" width=400px>  <img src="screenshots/post_record.png" alt="Post Record" width=400px> 
 
 Once you have entered in some foods you ate and recorded some feelings, the program will try to analyze which foods make you feel worse. 
 
@@ -31,6 +37,8 @@ In the same plot, the users feeling is graphed as a line graph over time.
 
 For each food plotted, a horizontal line of length d is also plotted, to help visualize how the program defines digestion. The squiggly area of width 2*"epsilon" at the end of each horizontal line describes when the program is looking for bad effects from that food. So if the squiggly line matches up with a time you felt worse than average, that is when that food gets a point. 
 
+<img src="screenshots/graph.png" alt="Graph" width=400px> 
+
 After you record a few things, the graph gets a little hectic, but what is measuring is a little hectic by default (there are so many ingredients in everything you eat). 
 
 In a future version, it would be nice to have better labelling in the graph, or a way to toggle different display options. Also it would be nice to be able to shift all the ingredients pictures to the right by d. 
@@ -39,7 +47,11 @@ In a future version, it would be nice to have better labelling in the graph, or 
 
 There is a history page that logs all foods you've eaten. 
 
+<img src="screenshots/history.png" alt="History" width=400px> 
+
 There is also a Configure page where you can change the values of d and epsilon. Currently d and epsilon always get reset after the user logs out. In a future version d and epsilon will be saved. 
+
+<img src="screenshots/configure.png" alt="Configure" width=400px> 
 
 ## Future ideas:
 
